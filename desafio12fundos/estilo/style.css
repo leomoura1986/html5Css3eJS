@@ -1,9 +1,14 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 /*
 Não esquecer de usar configuração global no CSS como logo abaixo (ex: *{ margin 0px }).
 */
-
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2:'Dancing Script', cursive; 
+    --font3:'Satisfy', cursive; 
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -11,15 +16,18 @@ Não esquecer de usar configuração global no CSS como logo abaixo (ex: *{ marg
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--font1);
 }
 header{
     background-color: black;
     color: aliceblue;
     text-align: center;
-}
+    }
 header>h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--font3);
+    font-size: 5vw;
 }
 header>p{
     padding-bottom: 50px;
@@ -36,8 +44,10 @@ section{
     padding-top: 8vh;
     padding-bottom: 8vh;
     padding-left: 20px;
-    line-height: 2em;
+    line-height: 1.5em;
     font-style: oblique;
+    font-family: var(--font2);
+    font-size: 3vw;
 }
 section.normal{
     background-color: aliceblue;
@@ -48,8 +58,9 @@ section.imagem{
     color: rgba(245, 218, 152, 0.878);
 }
 section.imagem>p{
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.164);
-    width: 400px;
 }
 footer{
     background-color: black;
